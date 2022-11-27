@@ -145,4 +145,6 @@ promise1.then(loadE).then(printToDiv);
 // }
 // promise1.then(displayStory).then(promise2.then(displayComment));
 
-/C/Users/Nava/Desktop/homework_12
+
+
+
