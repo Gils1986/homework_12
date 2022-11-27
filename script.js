@@ -48,14 +48,14 @@ function printToDiv(data) {
         let firstDiv = document.createElement("div");
         let newPar = document.createElement("p");
         let newElement = document.createTextNode(
-          `This is comment number ${element.id} for article number ${el.articleId} and the comment is ${el.content}`
+          `This is comment number ${element.id} for article number ${el.articleId} and the comment is: ${el.content}, for the  article title: ${element.title}`
         ); //איך אפשר לגשת לכל האובייקט?
 
         newPar.appendChild(newElement);
         firstDiv.appendChild(newPar);
         document.body.appendChild(firstDiv);
       }
-    });   
+    });
   });
 }
 
@@ -144,7 +144,3 @@ promise1.then(loadE).then(printToDiv);
 //   });
 // }
 // promise1.then(displayStory).then(promise2.then(displayComment));
-
-
-
-
